@@ -1,28 +1,26 @@
 <h2>Data Inventory</h2>
 <p>Data related to the topic of opportunity.</p>
 
+{% capture sort_strings %}
+  {% for p in site.data.data-providers %}
+    {{ p[1].name | slugify }}__{{ p[0] }}
+  {% endfor %}
+{% endcapture %}
+{% assign sort_strings = sort_strings | split:' ' | sort %}
+{% for sort_string in sort_strings %}
+{% assign sort_string_pair = sort_string | split:'__' %}
+{% assign id = sort_string_pair[1] %}
+{% assign provider = site.data.data-providers[id] %}
 <div class="usa-accordion">
   <ul class="usa-unstyled-list">
-
-    {% capture sort_strings %}
-      {% for p in site.data.data-providers %}
-        {{ p[1].name | slugify }}__{{ p[0] }}
-      {% endfor %}
-    {% endcapture %}
-    {% assign sort_strings = sort_strings | split:' ' | sort %}
-    {% for sort_string in sort_strings %}
-    {% assign sort_string_pair = sort_string | split:'__' %}
-    {% assign id = sort_string_pair[1] %}
-    {% assign provider = site.data.data-providers[id] %}
-    {% assign control_id = "collapsible-provider-" | append:forloop.index %}
     <li>
       <section>
-        <button class="usa-button-unstyled" aria-expanded="true"
-                aria-controls="{{control_id}}">
+        <button class="usa-button-unstyled" aria-expanded="false"
+                aria-controls="collapsible-0">
           {{ provider.name }}
         </button>
 
-        <div id="{{control_id}}" aria-hidden="false"
+        <div id="collapsible-0" aria-hidden="true"
              class="usa-accordion-content">
           <table>
             <thead>
@@ -46,7 +44,6 @@
 
       </section>
     </li>
-    {% endfor %}
-
   </ul>
 </div>
+{% endfor %}
