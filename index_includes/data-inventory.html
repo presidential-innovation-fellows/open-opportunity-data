@@ -1,0 +1,44 @@
+<h2>Data Inventory</h2>
+<p>Data related to the topic of opportunity.</p>
+
+<div class="usa-accordion">
+  <ul class="usa-unstyled-list">
+
+    {% for provider_hash in site.data.data-providers %}
+    {% assign provider = provider_hash[1] %}
+    {% assign control_id = "collapsible-provider-" | append:forloop.index0 %}
+    <li>
+      <section>
+        <button class="usa-button-unstyled" aria-expanded="true"
+                aria-controls="{{control_id}}">
+          {{ provider.name }}
+        </button>
+
+        <div id="{{control_id}}" aria-hidden="false"
+             class="usa-accordion-content">
+          <table>
+            <thead>
+              <tr>
+                <th scope="col">Topic</th>
+                <th scope="col">Description</th>
+                <th scope="col">URL</th>
+              </tr>
+            </thead>
+            <tbody>
+              {% for dataset in provider.datasets %}
+              <tr>
+                <td scope="row">{{ dataset.topic }}</td>
+                <td>{{ dataset.description }}</td>
+                <td><a href="{{ dataset.url }}">{{ dataset.url }}</a></td>
+              </tr>
+              {% endfor %}
+            </tbody>
+          </table>
+        </div>
+
+      </section>
+    </li>
+    {% endfor %}
+
+  </ul>
+</div>
