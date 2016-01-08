@@ -1,6 +1,8 @@
 <h2>Data Inventory</h2>
 <p>Data related to the topic of opportunity.</p>
 
+{% include_relative index_includes/data-inventory-provider.html id='federal' group_key='curator' %}
+
 {% capture sort_strings %}
   {% for p in site.data.data-providers %}
     {{ p[1].name | slugify }}__{{ p[0] }}
@@ -8,48 +10,9 @@
 {% endcapture %}
 {% assign sort_strings = sort_strings | split:' ' | sort %}
 {% for sort_string in sort_strings %}
-{% assign sort_string_pair = sort_string | split:'__' %}
-{% assign id = sort_string_pair[1] %}
-{% assign provider = site.data.data-providers[id] %}
-<div class="usa-accordion">
-  <ul class="usa-unstyled-list">
-    <li>
-      <section>
-        <button class="usa-button-unstyled" aria-expanded="false"
-                aria-controls="collapsible-0">
-          {{ provider.name }}
-        </button>
-
-        <div id="collapsible-0" aria-hidden="true"
-             class="usa-accordion-content">
-          <table>
-            <thead>
-              <tr>
-                <th scope="col">Topic</th>
-                <th scope="col">Description</th>
-                <th scope="col">URL</th>
-              </tr>
-            </thead>
-            <tbody>
-              {% assign topic_groups = provider.datasets | group_by: 'topic' | sort: 'name' %}
-              {% for topic_group in topic_groups %}
-                {% assign datasets = topic_group.items | sort: 'description' %}
-                {% for dataset in datasets %}
-                <tr>
-                  {% if forloop.first %}
-                  <td scope="row" rowspan="{{ topic_group.items | size }}">{{ dataset.topic }}</td>
-                  {% endif %}
-                  <td>{{ dataset.description }}</td>
-                  <td><a href="{{ dataset.url | uri_escape }}">{{ dataset.url }}</a></td>
-                </tr>
-                {% endfor %}
-              {% endfor %}
-            </tbody>
-          </table>
-        </div>
-
-      </section>
-    </li>
-  </ul>
-</div>
+  {% assign sort_string_pair = sort_string | split:'__' %}
+  {% assign id = sort_string_pair[1] %}
+  {% if id != 'federal' %}
+    {% include_relative index_includes/data-inventory-provider.html id=id group_key='topic' %}
+  {% endif %}
 {% endfor %}

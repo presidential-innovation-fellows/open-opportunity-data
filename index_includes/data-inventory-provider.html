@@ -1,0 +1,44 @@
+{% assign provider = site.data.data-providers[include.id] %}
+{% assign group_key = include.group_key %}
+
+<div class="usa-accordion">
+  <ul class="usa-unstyled-list">
+    <li>
+      <section>
+        <button class="usa-button-unstyled" aria-expanded="false"
+                aria-controls="collapsible-0">
+          {{ provider.name }}
+        </button>
+
+        <div id="collapsible-0" aria-hidden="true"
+             class="usa-accordion-content">
+          <table>
+            <thead>
+              <tr>
+                <th scope="col">{{ group_key | capitalize }}</th>
+                <th scope="col">Description</th>
+                <th scope="col">URL</th>
+              </tr>
+            </thead>
+            <tbody>
+              {% assign groups = provider.datasets | group_by: group_key | sort: 'name' %}
+              {% for group in groups %}
+                {% assign datasets = group.items | sort: 'description' %}
+                {% for dataset in datasets %}
+                <tr>
+                  {% if forloop.first %}
+                  <td scope="row" rowspan="{{ group.items | size }}">{{ dataset[group_key] }}</td>
+                  {% endif %}
+                  <td>{{ dataset.description }}</td>
+                  <td><a href="{{ dataset.url | uri_escape }}">{{ dataset.url }}</a></td>
+                </tr>
+                {% endfor %}
+              {% endfor %}
+            </tbody>
+          </table>
+        </div>
+
+      </section>
+    </li>
+  </ul>
+</div>
