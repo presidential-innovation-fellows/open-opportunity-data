@@ -2,15 +2,15 @@
 
 A collection of resources for developers of tools related to opportunity mobility.
 
-http://ood-beta.pif.gov
-https://ood.pif.gov
+* Staging (GitHub Pages): http://ood-beta.pif.gov
+* Production (AWS S3/CloudFront): https://ood.pif.gov
 
 ### Building
 
-* `gem install jekyll`
-* `git clone git@github.com:presidential-innovation-fellows/open-opportunity-data.git`
-* `cd open-opportunity-data`
-* `jekyll serve`
+1. `gem install jekyll`
+2. `git clone git@github.com:presidential-innovation-fellows/open-opportunity-data.git`
+3. `cd open-opportunity-data`
+4. `jekyll serve`
 
 You should now be able to visit http://127.0.0.1:4000/ and view the website locally.
 
