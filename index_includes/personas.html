@@ -3,7 +3,7 @@
 
 {% for persona_hash in site.data.personas %}
 {% assign persona = persona_hash[1] %}
-<article>
+<section>
 
   <section>
     <h3>{{ persona.name }}</h3>
@@ -38,5 +38,5 @@
     {% endfor %}
   </section>
 
-</article>
+</section>
 {% endfor %}
