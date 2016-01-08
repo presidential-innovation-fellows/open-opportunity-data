@@ -41,6 +41,10 @@ datasets:
     description: "SMART Locations Database"
     url: "http://geodata.epa.gov/ArcGIS/rest/services/OA/SmartLocationDatabase/MapServer"
 
+  - curator: "EPA"
+    description: "Environmental Justice Screening and Mapping (EJSCREEN)"
+    url: "http://www.epa.gov/ejscreen/download-ejscreen-data"
+
   - curator: "HHS"
     description: "Locations of Federally Qualified Health Centers"
     url: "http://findahealthcenter.hrsa.gov/#"
