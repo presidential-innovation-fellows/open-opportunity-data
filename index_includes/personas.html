@@ -1,0 +1,42 @@
+<h2>User Personas</h2>
+<p>These are examples of who you're helping.</p>
+
+{% for persona_hash in site.data.personas %}
+{% assign persona = persona_hash[1] %}
+<article>
+
+  <section>
+    <h3>{{ persona.name }}</h3>
+    <p>{{ persona.overview }}</p>
+  </section>
+
+  <section>
+    <h4>Quotes</h4>
+    {% for x in persona.quotes %}
+    <p>"{{ x }}"</p>
+    {% endfor %}
+  </section>
+
+  <section>
+    <h4>Needs</h4>
+    {% for x in persona.needs %}
+    <p>{{ x }}</p>
+    {% endfor %}
+  </section>
+
+  <section>
+    <h4>Actions she is looking to take</h4>
+    {% for x in persona.actions %}
+    <p>{{ x }}</p>
+    {% endfor %}
+  </section>
+
+  <section>
+    <h4>Goals and Motivations</h4>
+    {% for x in persona.goals %}
+    <p>{{ x }}</p>
+    {% endfor %}
+  </section>
+
+</article>
+{% endfor %}
