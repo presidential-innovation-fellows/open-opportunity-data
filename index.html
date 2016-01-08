@@ -2,19 +2,19 @@
 layout: default
 ---
 
-<div class="usa-grid">
+<header>
+  {% include disclaimer.html %}
 
-  <header class="usa-width-one-whole">
+  <div class="banner">
     <h1>Open Opportunity Data</h1>
     <p class="usa-font-lead">Developer Resources</p>
-  </header>
+  </div>
+</header>
 
-  <article class="usa-width-one-whole">
-    {% include_relative index_includes/data-inventory.html %}
-  </article>
+<article>
+  {% include_relative index_includes/data-inventory.html %}
+</article>
 
-  <article class="usa-width-one-whole">
-    {% include_relative index_includes/personas.html %}
-  </article>
-
-</div>
+<article class="alt">
+  {% include_relative index_includes/personas.html %}
+</article>

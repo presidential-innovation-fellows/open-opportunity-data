@@ -6,3 +6,47 @@
 // Import partials from `sass_dir` (defaults to `_sass`)
 // These are the U.S. Design Standards variables (color definitions, etc.)
 @import "core/variables";
+
+h1, h2, h3, h4, h5, h6 {
+  color: $color-primary-darker;
+}
+
+main > article,
+.banner {
+  overflow: auto; /* defeat margin collapse */
+}
+
+.usa-disclaimer,
+.banner > *,
+main > article > * {
+  padding-left: $site-margins;
+  padding-right: $site-margins;
+}
+
+.banner {
+  background-color: $color-primary-darkest;
+
+  & > * {
+    color: $color-white !important;
+  }
+
+  & > :first-child {
+    margin-top: $grid-margins * 1.5;
+  }
+
+  & > :last-child {
+    margin-bottom: $grid-margins * 1.5;
+  }
+}
+
+.usa-font-lead {
+  color: $color-gray-dark;
+}
+
+article {
+  padding-bottom: $grid-margins;
+}
+
+article.alt {
+  background-color: $color-gray-lightest;
+}
