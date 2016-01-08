@@ -50,6 +50,7 @@ main > article > * {
 
 .persona {
   background-color: $color-white;
+  border-radius: 3px;
   margin: $grid-margins;
 
   .name {
@@ -63,5 +64,5 @@ article {
 }
 
 article.alt {
-  background-color: $color-gray-lightest;
+  background-color: $color-gray-cool-light;
 }
