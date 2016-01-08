@@ -1,0 +1,10 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset "utf-8";
+
+// Import partials from `sass_dir` (defaults to `_sass`)
+// This ("all") is the U.S. Design Standards -- we import the SCSS here
+// rather than linking to its precompiled CSS in our HTML so that this
+// SCSS file can take advantage of its variables (color definitions, etc.)
+@import "all";
