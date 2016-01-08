@@ -3,40 +3,56 @@
 
 {% for persona_hash in site.data.personas %}
 {% assign persona = persona_hash[1] %}
-<section>
+<section class="persona">
+  <div class="usa-grid-full">
 
-  <section>
-    <h3>{{ persona.name }}</h3>
-    <p>{{ persona.overview }}</p>
-  </section>
+    <div class="usa-width-one-third">
+      <section>
+        <h3 class="name">{{ persona.name }}</h3>
+        <p>{{ persona.overview }}</p>
+      </section>
+    </div>
 
-  <section>
-    <h4>Quotes</h4>
-    {% for x in persona.quotes %}
-    <p>"{{ x }}"</p>
-    {% endfor %}
-  </section>
+    <div class="usa-width-one-third">
+      <section>
+        <h4>Quotes</h4>
+        <ul>
+          {% for x in persona.quotes %}
+            <li>"{{ x }}"</li>
+          {% endfor %}
+        </ul>
+      </section>
 
-  <section>
-    <h4>Needs</h4>
-    {% for x in persona.needs %}
-    <p>{{ x }}</p>
-    {% endfor %}
-  </section>
+      <section>
+        <h4>Needs</h4>
+        <ul>
+          {% for x in persona.needs %}
+            <li>"{{ x }}"</li>
+          {% endfor %}
+        </ul>
+      </section>
+    </div>
 
-  <section>
-    <h4>Actions she is looking to take</h4>
-    {% for x in persona.actions %}
-    <p>{{ x }}</p>
-    {% endfor %}
-  </section>
+    <div class="usa-width-one-third">
+      <section>
+        <h4>Actions {% if persona.gender == 'f' %}s{% endif %}he is looking to take</h4>
+        <ul>
+          {% for x in persona.actions %}
+            <li>"{{ x }}"</li>
+          {% endfor %}
+        </ul>
+      </section>
 
-  <section>
-    <h4>Goals and Motivations</h4>
-    {% for x in persona.goals %}
-    <p>{{ x }}</p>
-    {% endfor %}
-  </section>
+      <section>
+        <h4>Goals and Motivations</h4>
+        <ul>
+          {% for x in persona.goals %}
+            <li>"{{ x }}"</li>
+          {% endfor %}
+        </ul>
+      </section>
+    </div>
 
+  </div>
 </section>
 {% endfor %}

@@ -12,7 +12,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 main > article,
-.banner {
+.banner,
+.persona {
   overflow: auto; /* defeat margin collapse */
 }
 
@@ -41,6 +42,20 @@ main > article > * {
 
 .usa-font-lead {
   color: $color-gray-dark;
+}
+
+.usa-grid-full {
+  max-width: none;
+}
+
+.persona {
+  background-color: $color-white;
+  margin: $grid-margins;
+
+  .name {
+    color: $color-secondary;
+    font-size: 200%;
+  }
 }
 
 article {
