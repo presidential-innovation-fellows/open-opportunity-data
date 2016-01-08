@@ -1,4 +1,5 @@
 name: "Kansas City"
+url: "https://data.kcmo.org"
 datasets:
   - topic: "Parcels and addresses"
     description: "Solid waste management"
@@ -19,6 +20,10 @@ datasets:
   - topic: "Crime"
     description: "2014 Crime data"
     url: "https://data.kcmo.org/Crime/crime-data/9u7z-x596"
+
+  - topic: "Homelessness"
+    description: "n/a"
+    url: ""
 
   - topic: "311"
     description: "311 Call for service requests"
