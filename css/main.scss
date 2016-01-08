@@ -31,11 +31,11 @@ main > article > * {
   }
 
   & > :first-child {
-    margin-top: $grid-margins * 1.5;
+    margin-top: $grid-margins * 2;
   }
 
   & > :last-child {
-    margin-bottom: $grid-margins * 1.5;
+    margin-bottom: $grid-margins * 2;
   }
 }
 
