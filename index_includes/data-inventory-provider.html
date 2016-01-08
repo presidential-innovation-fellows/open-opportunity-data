@@ -1,3 +1,4 @@
+{% assign edit_url = site.repo_url | append: "/edit/master/_data/data-providers/" | append: include.id | append: ".yml" %}
 {% assign provider = site.data.data-providers[include.id] %}
 {% assign group_key = include.group_key %}
 
@@ -13,6 +14,9 @@
         <div id="collapsible-0" aria-hidden="true"
              class="usa-accordion-content">
           <table>
+
+            <a href="{{ edit_url }}">Edit in GitHub</a>
+
             <thead>
               <tr>
                 <th scope="col">{{ group_key | capitalize }}</th>
