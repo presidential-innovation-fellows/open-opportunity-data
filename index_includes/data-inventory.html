@@ -31,12 +31,17 @@
               </tr>
             </thead>
             <tbody>
-              {% for dataset in provider.datasets %}
+              {% assign topic_groups = provider.datasets | group_by: 'topic' | sort: 'name' %}
+              {% for topic_group in topic_groups %}
+              {% for dataset in topic_group.items %}
               <tr>
-                <td scope="row">{{ dataset.topic }}</td>
+                {% if forloop.first %}
+                <td scope="row" rowspan="{{ topic_group.items | size }}">{{ dataset.topic }}</td>
+                {% endif %}
                 <td>{{ dataset.description }}</td>
-                <td><a href="{{ dataset.url }}">{{ dataset.url }}</a></td>
+                <td><a href="{{ dataset.url | uri_escape }}">{{ dataset.url }}</a></td>
               </tr>
+              {% endfor %}
               {% endfor %}
             </tbody>
           </table>
