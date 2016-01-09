@@ -3,14 +3,15 @@
 
 {% for persona_hash in site.data.personas %}
 {% assign persona = persona_hash[1] %}
-<section class="persona">
+<section class="ood-persona">
   <div class="usa-grid-full">
 
     <div class="usa-width-one-third">
       <section>
-        <img class="head" src="{{ site.baseurl }}/img/{{ persona.gender }}-silhouette.png"
+        <img class="ood-persona-head"
+             src="{{ site.baseurl }}/img/{{ persona.gender }}-silhouette.png"
              alt="Silhouette of a {{ persona.gender }} face">
-        <h3 class="name">{{ persona.name }}</h3>
+        <h3 class="ood-persona-name">{{ persona.name }}</h3>
         <p>{{ persona.overview }}</p>
       </section>
     </div>
