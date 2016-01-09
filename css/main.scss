@@ -52,10 +52,21 @@ main > article > * {
   background-color: $color-white;
   border-radius: 3px;
   margin: $grid-margins;
+  padding-top: $grid-margins * .75;
+
+  img.head {
+    height: 15rem;
+    width: 15rem;
+    margin: $grid-margins*.5 $grid-margins*.25 $grid-margins*.25 0;
+    vertical-align: middle;
+  }
 
   .name {
     color: $color-secondary;
-    font-size: 200%;
+    display: inline-block;
+    font-size: 3.5rem;
+    margin-top: $grid-margins;
+    vertical-align: middle;
   }
 }
 

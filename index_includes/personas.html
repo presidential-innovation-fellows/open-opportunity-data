@@ -8,6 +8,7 @@
 
     <div class="usa-width-one-third">
       <section>
+        <img class="head" src="{{ site.baseurl }}/img/{{ persona.gender }}-silhouette.png">
         <h3 class="name">{{ persona.name }}</h3>
         <p>{{ persona.overview }}</p>
       </section>
@@ -35,7 +36,7 @@
 
     <div class="usa-width-one-third">
       <section>
-        <h4>Actions {% if persona.gender == 'f' %}s{% endif %}he is looking to take</h4>
+        <h4>Actions {{ persona.name }} is looking to take</h4>
         <ul>
           {% for x in persona.actions %}
             <li>"{{ x }}"</li>
