@@ -17,6 +17,10 @@
 
             <a href="{{ edit_url }}">Edit in GitHub</a>
 
+            {% if provider.notes %}
+              <p>{{ provider.notes }}</p>
+            {% endif %}
+
             <thead>
               <tr>
                 <th scope="col">{{ group_key | capitalize }}</th>

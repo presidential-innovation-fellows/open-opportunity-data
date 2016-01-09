@@ -28,7 +28,7 @@
         <h4>Needs</h4>
         <ul>
           {% for x in persona.needs %}
-            <li>"{{ x }}"</li>
+            <li>{{ x }}</li>
           {% endfor %}
         </ul>
       </section>
@@ -39,7 +39,7 @@
         <h4>Actions {{ persona.name }} is looking to take</h4>
         <ul>
           {% for x in persona.actions %}
-            <li>"{{ x }}"</li>
+            <li>{{ x }}</li>
           {% endfor %}
         </ul>
       </section>
@@ -48,7 +48,7 @@
         <h4>Goals and Motivations</h4>
         <ul>
           {% for x in persona.goals %}
-            <li>"{{ x }}"</li>
+            <li>{{ x }}</li>
           {% endfor %}
         </ul>
       </section>
