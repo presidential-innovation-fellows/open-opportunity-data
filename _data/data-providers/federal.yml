@@ -70,5 +70,5 @@ datasets:
     url: "http://www2.census.gov/"
 
   - curator: "ED"
-    description: "?"
-    url: "?"
+    description: "ED Data Inventory"
+    url: "http://datainventory.ed.gov/InventoryList"
