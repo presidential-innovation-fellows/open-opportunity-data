@@ -66,8 +66,8 @@ datasets:
     url: "http://lehd.ces.census.gov/data/lodes/"
 
   - curator: "Census"
-    description: "?"
-    url: "?"
+    description: "American Community Survey (ACS)"
+    url: "http://www2.census.gov/"
 
   - curator: "ED"
     description: "?"
