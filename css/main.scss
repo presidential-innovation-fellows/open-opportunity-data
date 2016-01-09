@@ -19,7 +19,8 @@ main > article,
 
 .usa-disclaimer,
 .banner > *,
-main > article > * {
+main > article > * ,
+footer {
   padding-left: $site-margins;
   padding-right: $site-margins;
 }
@@ -76,4 +77,34 @@ article {
 
 article.alt {
   background-color: $color-gray-cool-light;
+}
+
+.usa-background-dark {
+  h1, h2, h3, h4, h5, h6 {
+    color: $color-white;
+  }
+}
+
+footer {
+  .usa-footer-secondary_section {
+    background-color: $color-gray-dark;
+    color: $color-white;
+    padding-bottom: 0;
+
+    a {
+      color: $color-gray-lighter;
+    }
+  }
+
+  address > :last-child {
+    margin-bottom: $site-margins;
+  }
+
+  .usa-footer-logo-img {
+    max-height: 12rem;
+    max-width: 12rem;
+    vertical-align: middle;
+    margin-right: $grid-margins;
+    margin-bottom: $grid-margins;
+  }
 }
