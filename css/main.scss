@@ -28,6 +28,10 @@ footer {
 
 .ood-banner {
   background-color: $color-primary-darkest;
+  background-repeat: no-repeat;
+  background-image: url(../img/hero.jpg);
+  background-size: cover;
+  background-position: center bottom;
 
   & > * {
     color: $color-white !important;
