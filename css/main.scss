@@ -12,6 +12,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 main > article,
+main > section,
 .ood-banner,
 .ood-persona {
   overflow: auto; /* defeat margin collapse */
@@ -77,6 +78,11 @@ article {
 
 article.alt {
   background-color: $color-gray-cool-light;
+}
+
+.ood-quotation p {
+  color: $color-primary-alt-darkest;
+  margin: $grid-margins*1.5 auto;
 }
 
 .usa-background-dark {
