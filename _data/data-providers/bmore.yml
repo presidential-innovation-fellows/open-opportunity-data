@@ -1,10 +1,6 @@
 name: "Baltimore"
 url: "https://data.baltimorecity.gov"
 datasets:
-  - topic: "Homelessness"
-    description: "n/a"
-    url: ""
-
   - topic: "Parcels and addresses"
     description: "Arrests"
     url: "https://data.baltimorecity.gov/Public-Safety/BPD-Arrests/3i3v-ibrt"
