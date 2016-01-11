@@ -54,6 +54,14 @@ footer {
   max-width: none;
 }
 
+.ood-provider {
+  .repo {
+    float: right;
+    font-size: smaller;
+    font-weight: bold;
+  }
+}
+
 .ood-persona {
   background-color: $color-white;
   border-radius: 3px;

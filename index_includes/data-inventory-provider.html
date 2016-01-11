@@ -5,7 +5,7 @@
 <div class="usa-accordion-bordered">
   <ul class="usa-unstyled-list">
     <li>
-      <section>
+      <section class="ood-provider">
         <button class="usa-button-unstyled" aria-expanded="false"
                 aria-controls="collapsible-0">
           <h4>{{ provider.name }}</h4>
@@ -13,14 +13,16 @@
 
         <div id="collapsible-0" aria-hidden="true"
              class="usa-accordion-content">
+
+          {{ provider.name }} data site:
+          <a href="{{ provider.url }}">{{ provider.url }}</a>
+          <a class="repo" href="{{ edit_url }}">Edit in GitHub</a>
+
+          {% if provider.notes %}
+            <p>{{ provider.notes }}</p>
+          {% endif %}
+
           <table>
-
-            <a href="{{ edit_url }}">Edit in GitHub</a>
-
-            {% if provider.notes %}
-              <p>{{ provider.notes }}</p>
-            {% endif %}
-
             <thead>
               <tr>
                 <th scope="col">
