@@ -2,9 +2,6 @@ name: "Philadelphia"
 url: "https://www.opendataphilly.org"
 notes: "Other categories: food, heath and human services, arts and culture, environment, election economy"
 datasets:
-  - topic: "Homelessness"
-    description: "n/a"
-    url: ""
 
   - topic: "Parcels and addresses"
     description: "Snow emergency routes"
