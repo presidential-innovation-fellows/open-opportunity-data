@@ -21,10 +21,6 @@ datasets:
     description: "2014 Crime data"
     url: "https://data.kcmo.org/Crime/crime-data/9u7z-x596"
 
-  - topic: "Homelessness"
-    description: "n/a"
-    url: ""
-
   - topic: "311"
     description: "311 Call for service requests"
     url: "https://data.kcmo.org/311/311-Call-Center-Service-Requests/7at3-sxhp"
