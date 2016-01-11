@@ -2,9 +2,6 @@ name: "Indianapolis"
 url: "https://data.indy.gov"
 notes: "Data sets available: Citizen complains, building permits, code enforcement, officer involved shootings, use of force incidents, service cases, request for information cases, switchboard cases"
 datasets:
-  - topic: "Parcels and addresses"
-    description: "?"
-    url: ""
 
   - topic: "Permits"
     description: "Building permits"
@@ -14,38 +11,14 @@ datasets:
     description: "Violations and investigations"
     url: "https://data.indy.gov/view/7e5w-wmac"
 
-  - topic: "Publicly owned land"
-    description: "?"
-    url: ""
 
   - topic: "Crime"
     description: "IMPD Citizen Complaints"
     url: "https://data.indy.gov/dataset/IMPD-Citizen-Complaints/h8rn-gy8c"
 
-  - topic: "Homelessness"
-    description: "?"
-    url: ""
 
   - topic: "311"
     description: "Service cases"
     url: "https://data.indy.gov/dataset/Service-Cases/6djc-35s6"
 
-  - topic: "Transit"
-    description: "?"
-    url: ""
 
-  - topic: "Preschool/daycare"
-    description: "?"
-    url: ""
-
-  - topic: "Schools"
-    description: "?"
-    url: ""
-
-  - topic: "Privately owned assets"
-    description: "?"
-    url: ""
-
-  - topic: "Zoning"
-    description: "?"
-    url: ""
