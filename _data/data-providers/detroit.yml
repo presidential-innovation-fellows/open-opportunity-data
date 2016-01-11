@@ -1,10 +1,6 @@
 name: "Detroit"
 url: "https://data.detroitmi.gov"
 datasets:
-  - topic: "Homelessness"
-    description: "n/a"
-    url: ""
-
   - topic: "Parcels and addresses"
     description: "Property and parcels"
     url: "https://data.detroitmi.gov/browse?category=Property+%26+Parcels"
