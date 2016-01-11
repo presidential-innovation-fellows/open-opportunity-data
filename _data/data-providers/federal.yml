@@ -29,10 +29,6 @@ datasets:
     description: "Racially/ethnically concentrated areas of poverty (RECAP)"
     url: "http://egis.hud.opendata.arcgis.com/datasets/320b8ab5d0304daaa7f1b8c03ff01256_0"
 
-  - curator: "HUD"
-    description: "AFFH Raw CSV files"
-    url: "http://hud.maps.arcgis.com/home/search.html?q=fair%20housing%20csv&t=content"
-
   - curator: "DOT/HUD"
     description: "Location Affordability Index"
     url: "http://www.locationaffordability.info/lai.aspx?url=download.php"
