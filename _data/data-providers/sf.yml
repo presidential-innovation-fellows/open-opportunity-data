@@ -1,13 +1,6 @@
 name: "San Francisco"
 url: "https://data.sfgov.org"
 datasets:
-  - topic: "Code enforcement"
-    description: "n/a"
-    url: ""
-
-  - topic: "Preschool/daycare"
-    description: "n/a"
-    url: ""
 
   - topic: "Parcels and addresses"
     description: "Neighborhood groups map"
