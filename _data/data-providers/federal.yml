@@ -68,7 +68,15 @@ datasets:
   - curator: "Census"
     description: "American Community Survey (ACS)"
     url: "http://www2.census.gov/"
-
+    
+  - curator: "Census"
+    description: "CitySDK - American Community Survey (ACS)"
+    url: "https://uscensusbureau.github.io/citysdk/"
+    
+  - curator: "Census"
+    description: "Other Developer Resources"
+    url: "http://www.census.gov/developer"
+    
   - curator: "ED"
     description: "ED Data Inventory"
     url: "http://datainventory.ed.gov/InventoryList"
