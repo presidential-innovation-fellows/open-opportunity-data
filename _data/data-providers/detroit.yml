@@ -1,7 +1,6 @@
 name: "Detroit"
 url: "https://data.detroitmi.gov"
 datasets:
-
   - topic: "Parcels and addresses"
     description: "Property and parcels"
     url: "https://data.detroitmi.gov/browse?category=Property+%26+Parcels"
