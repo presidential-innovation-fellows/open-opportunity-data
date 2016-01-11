@@ -1,10 +1,6 @@
 name: "Washington, DC"
 url: "https://opendata.dc.gov"
 datasets:
-  - topic: "Code enforcement"
-    description: "n/a"
-    url: ""
-
   - topic: "Parcels and addresses"
     description: "Snow removal route"
     url: "http://opendata.dc.gov/datasets/a0491c3eb8224c1a99a3552a0c1d97ed_20"
