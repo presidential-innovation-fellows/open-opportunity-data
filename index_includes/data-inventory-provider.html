@@ -23,7 +23,9 @@
 
             <thead>
               <tr>
-                <th scope="col">{{ group_key | capitalize }}</th>
+                <th scope="col">
+                  {{ group_key | capitalize }}
+                </th>
                 <th scope="col">Description</th>
                 <th scope="col">URL</th>
               </tr>
@@ -35,7 +37,19 @@
                 {% for dataset in datasets %}
                 <tr>
                   {% if forloop.first %}
-                  <td scope="row" rowspan="{{ group.items | size }}">{{ dataset[group_key] }}</td>
+                  <td scope="row" rowspan="{{ group.items | size }}">
+
+                    <!-- ugly hack to quickly link to curator URLs -->
+                    {% if group_key == "curator" %}
+                      {% assign curator_name = dataset[group_key] %}
+                      <a href="{{ site.data.curators[curator_name].url }}">
+                        {{ dataset[group_key] }}
+                      </a>
+                    {% else %}
+                      {{ dataset[group_key] }}
+                    {% endif %}
+
+                  </td>
                   {% endif %}
                   <td>{{ dataset.description }}</td>
                   <td><a href="{{ dataset.url | uri_escape }}">{{ dataset.url }}</a></td>
