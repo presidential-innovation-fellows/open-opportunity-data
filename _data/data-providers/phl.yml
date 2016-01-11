@@ -2,7 +2,6 @@ name: "Philadelphia"
 url: "https://www.opendataphilly.org"
 notes: "Other categories: food, heath and human services, arts and culture, environment, election economy"
 datasets:
-
   - topic: "Parcels and addresses"
     description: "Snow emergency routes"
     url: "https://www.opendataphilly.org/dataset/snow-emergency-routes"
