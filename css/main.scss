@@ -14,7 +14,8 @@ h1, h2, h3, h4, h5, h6 {
 main > article,
 main > section,
 .ood-banner,
-.ood-persona {
+.ood-persona,
+.error {
   overflow: auto; /* defeat margin collapse */
 }
 
@@ -24,6 +25,16 @@ main > article > * ,
 footer {
   padding-left: $site-margins;
   padding-right: $site-margins;
+}
+
+.error {
+  background-color: $color-gray-cool-light;
+  text-align: center;
+  min-height: 450px; /* ugly little hack */
+
+  p {
+    max-width: none;
+  }
 }
 
 .ood-banner {
