@@ -38,7 +38,7 @@ datasets:
     url: "https://data.sfgov.org/Public-Safety/Fire-Calls-For-Service-Responses-/5hms-iq2d"
 
   - topic: "Homelessness"
-    description: "2001 Point in Time count"
+    description: "2011 Point in Time count"
     url: "https://data.sfgov.org/Health-and-Social-Services/2011-Unsheltered-Homeless-Population-by-Supervisor/ibax-2ewt"
 
   - topic: "311"
