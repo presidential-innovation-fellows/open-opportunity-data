@@ -90,10 +90,6 @@ datasets:
     url: "https://data.cityofnewyork.us/City-Government/Zoning-GIS-Data-ESRI-Shape-file/kdig-pewd"
 
   - topic: "Health and environment"
-    description: "Health Care failities"
-    url: "https://data.sfgov.org/Health-and-Social-Services/Health-Care-Facilities-San-Francisco-CA/xncg-kcnk"
-
-  - topic: "Health and environment"
     description: "Restaurant inspection results"
     url: "https://nycopendata.socrata.com/Health/DOHMH-New-York-City-Restaurant-Inspection-Results/xx67-kt59"
 
