@@ -45,6 +45,14 @@ footer {
   background-size: cover;
   background-position: center bottom;
 
+  a {
+    color: $color-gray-lighter;
+
+    &:hover {
+      color: $color-white;
+    }
+  }
+
   & > * {
     color: $color-white !important;
   }
