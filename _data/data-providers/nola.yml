@@ -64,3 +64,7 @@ datasets:
   - topic: "Zoning"
     description: "Zoning districts"
     url: "https://data.nola.gov/Housing-Land-Use-and-Blight/NOLA-Zoning-Districts/dnvw-73jv"
+
+  - topic: "Mardi Gras Parade Routes - 2016"
+    description: "Mardi Gras Parade Routes - Daily Routes"
+    url: "http://portal.nolagis.opendata.arcgis.com/datasets/aa8931b8b6d4437c9a611f219185c23e_0"
