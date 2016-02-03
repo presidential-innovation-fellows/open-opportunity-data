@@ -1,0 +1,17 @@
+<h2>Scenarios</h2>
+<p class="usa-font-lead">Selected data related to opportunity.</p>
+<p>
+  <strong>What are scenarios and what are they for?</strong>
+  <br>
+  The scenarios below leverage subject matter expertise to represent where our target end users are today – how they approach decisions and tasks, and experience problems – without open data technology designed specifically to help them.  This information maps the problem space for developers to consider when designing opportunity data apps, mapping tools, and decision aides for the targeted end users.
+</p>
+<p>
+  <strong>What are these scenarios based on?</strong>
+  <br>
+  The content is based on prior field research and extensive professional experience working directly with targeted end users, and has been additionally vetted by external experts. The idea in creating a scenario is to represent the common elements of target users' current experiences in a realistic way by creating a composite of several different real people.
+</p>
+
+{% for s in site.data.scenarios %}
+  {% assign id = s[0] %}
+  {% include_relative index_includes/scenario.html id=id %}
+{% endfor %}

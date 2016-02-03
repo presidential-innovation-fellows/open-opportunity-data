@@ -112,10 +112,14 @@ article.alt {
   background-color: $color-gray-cool-light;
 }
 
-.ood-quotation p {
-  color: $color-primary-alt-darkest;
-  margin: $grid-margins*1.5 auto;
-  padding: 0 $site-margins;
+.ood-quotation {
+  background-color: $color-gray-cool-light;
+
+  p {
+    color: $color-primary-alt-darkest;
+    margin: $grid-margins*1.5 auto;
+    padding: 0 $site-margins;
+  }
 }
 
 .usa-background-dark {
