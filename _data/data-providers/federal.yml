@@ -29,6 +29,22 @@ datasets:
     description: "Racially/ethnically concentrated areas of poverty (RECAP)"
     url: "http://egis.hud.opendata.arcgis.com/datasets/320b8ab5d0304daaa7f1b8c03ff01256_0"
 
+  - curator: "HUD"
+    description: " Promise Zones"
+    url: "http://egis.hud.opendata.arcgis.com/datasets/a10cbd9187a34bd2a28574a3cfe12e64_0"
+
+  - curator: "HUD"
+    description: "Choice Neighborhoods Grantees"
+    url: "http://egis.hud.opendata.arcgis.com/datasets/ec2691b3adba44b1a85596410d04933b_0"
+
+  - curator: "HUD"
+    description: "Strong Cities, Strong Communities Initiative Areas (\"SC2\")"
+    url: "http://egis.hud.opendata.arcgis.com/datasets/4b482877999e44ff96c377d5c1bc5b79_0"
+
+  - curator: "HUD"
+    description: "Sustainable Communities Regional Planning Grantees (\"SCI\")"
+    url: "http://egis.hud.opendata.arcgis.com/datasets/b0496a9daa8a4faab1efd2762ac6b9c1_0"
+
   - curator: "DOT/HUD"
     description: "Location Affordability Index"
     url: "http://www.locationaffordability.info/lai.aspx?url=download.php"
@@ -64,15 +80,15 @@ datasets:
   - curator: "Census"
     description: "American Community Survey (ACS)"
     url: "http://www2.census.gov/"
-    
+
   - curator: "Census"
     description: "CitySDK - American Community Survey (ACS)"
     url: "https://uscensusbureau.github.io/citysdk/"
-    
+
   - curator: "Census"
     description: "Other Developer Resources"
     url: "http://www.census.gov/developer"
-    
+
   - curator: "ED"
     description: "ED Data Inventory"
     url: "http://datainventory.ed.gov/InventoryList"
