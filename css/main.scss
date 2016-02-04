@@ -7,6 +7,9 @@
 // These are the U.S. Design Standards variables (color definitions, etc.)
 @import "core/variables";
 
+@media screen and (max-width: 1200px) { .ood-narrow-hide { display: none; } }
+@media screen and (min-width: 1201px) { .ood-wide-hide { display: none; } }
+
 h1, h2, h3, h4, h5, h6 {
   color: $color-primary-darker;
 }
