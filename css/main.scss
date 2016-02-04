@@ -52,16 +52,13 @@ footer {
     }
   }
 
-  & > * {
+  & p,
+  & h1 {
     color: $color-white !important;
   }
 
-  & > :first-child {
-    margin-top: $grid-margins * 2;
-  }
-
   & > :last-child {
-    margin-bottom: $grid-margins * 2;
+    margin-bottom: $grid-margins;
   }
 }
 
