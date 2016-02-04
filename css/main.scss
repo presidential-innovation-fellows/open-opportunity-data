@@ -14,7 +14,6 @@ h1, h2, h3, h4, h5, h6 {
 main > article,
 main > section,
 .ood-banner,
-.ood-persona,
 .error {
   overflow: auto; /* defeat margin collapse */
 }
@@ -79,28 +78,6 @@ footer {
     float: right;
     font-size: smaller;
     font-weight: bold;
-  }
-}
-
-.ood-persona {
-  background-color: $color-white;
-  border-radius: 3px;
-  margin: $grid-margins;
-  padding-top: $grid-margins * .75;
-
-  img.ood-persona-head {
-    height: 12rem;
-    width: 12rem;
-    margin: $grid-margins*.5 $grid-margins*.35 $grid-margins*.25 0;
-    vertical-align: middle;
-  }
-
-  .ood-persona-name {
-    color: $color-secondary;
-    display: inline-block;
-    font-size: 3.5rem;
-    margin-top: $grid-margins;
-    vertical-align: middle;
   }
 }
 
