@@ -51,6 +51,14 @@ datasets:
     url: "https://www.opendataphilly.org/group/parks-recreation-group"
 
   - topic: "Publicly owned land"
+    description: "Parks and recreation assets"
+    url: "https://www.opendataphilly.org/dataset/parks-and-recreation-assets"
+
+  - topic: "Publicly owned land"
+    description: "Parks and Rec Out of School Programs"
+    url: "https://www.opendataphilly.org/dataset/ppr-out-of-school-time-programs"
+
+  - topic: "Publicly owned land"
     description: "City buildings"
     url: "https://www.opendataphilly.org/dataset/mfdb-city-buildings"
 
@@ -69,6 +77,10 @@ datasets:
   - topic: "311"
     description: "311 service requests"
     url: "https://www.opendataphilly.org/dataset/311-service-requests"
+
+  - topic: "Transit"
+    description: "Bike data"
+    url: "https://www.opendataphilly.org/organization/city-of-philadelphia?q=bike&sort=score+desc%2C+metadata_modified+desc"
 
   - topic: "Transit"
     description: "Transportation data sets"
@@ -97,3 +109,11 @@ datasets:
   - topic: "Zoning"
     description: "Zoning base districts"
     url: "https://www.opendataphilly.org/dataset/zoning-base-districts"
+
+  - topic: "Health and environment"
+    description: "Health Centers"
+    url: "https://www.opendataphilly.org/dataset/health-centers"
+
+  - topic: "Health and environment"
+    description: "Healthy Corner Stores"
+    url: "https://www.opendataphilly.org/dataset/healthy-corner-store-locations"
