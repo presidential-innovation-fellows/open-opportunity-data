@@ -92,3 +92,7 @@ datasets:
   - curator: "ED"
     description: "ED Data Inventory"
     url: "http://datainventory.ed.gov/InventoryList"
+
+  - curator: "ED"
+    description: "Civil Rights Data Collection"
+    url: "http://ocrdata.ed.gov/"
